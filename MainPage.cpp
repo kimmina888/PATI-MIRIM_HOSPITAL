@@ -868,7 +868,7 @@ public:
 				char* info = (char*)malloc(sizeof(information[0] + ", " + information[1] + ", " + information[2] + ", " + information[3] + ", " + information[4] + ", " + information[5]));
 				strcpy(info, (information[0] + ", " + information[1] + ", " + information[2] + ", " + information[3] + ", " + information[4] + ", " + information[5]).c_str());
 				strcat(sql, info);
-				if (mysql_query(conn, sql) != 0) {
+						if (mysql_query(conn, sql) != 0) {
 					gotoxy(45, 11);
 					cout << information[0] << "님 가입이 완료 되셨습니다.";
 					this->ID = information[0];
